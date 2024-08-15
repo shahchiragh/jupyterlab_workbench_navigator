@@ -1,0 +1,16 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.3.5
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: shahch@ornl.gov
+author_name: Chirag Shah
+has_binder: true
+has_settings: false
+kind: frontend
+labextension_name: jupyterlab_workbench_navigator
+project_short_description: A JupyterLab extension for adding a navigator widget at
+    the bottom of JupyterLab page to facilitate quick access to data workbench and
+    other relevant applications
+python_name: jupyterlab_workbench_navigator
+repository: https://github.com/shahchiragh/jupyterlab_workbench_navigator
+test: false
+
