@@ -1,18 +1,38 @@
 import {
-  JupyterFrontEnd,
   JupyterFrontEndPlugin
 } from '@jupyterlab/application';
+import Vue from 'vue';
+// Bootstrap Vue and icons
+import { BootstrapVue, BootstrapVueIcons } from "bootstrap-vue";
+// Import Bootstrap and BootstrapVue CSS files (order is important)
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
+import WorkbenchNavigator from './WorkbenchNavigator.vue';
 
 /**
- * Initialization data for the jupyterlab_workbench_navigator extension.
+ * Initialization data for the workbench navigator widget extension.
  */
-const plugin: JupyterFrontEndPlugin<void> = {
-  id: 'jupyterlab_workbench_navigator:plugin',
-  description: 'A JupyterLab extension for adding a navigator widget at the bottom of JupyterLab page to facilitate quick access to data workbench and other relevant applications',
+const extension: JupyterFrontEndPlugin<void> = {
+  id: 'workbench-vue-extension',
+  description: 'A minimal JupyterLab extension for ARM Workbench Navigator .',
   autoStart: true,
-  activate: (app: JupyterFrontEnd) => {
-    console.log('JupyterLab extension jupyterlab_workbench_navigator is activated!');
+  activate: () => {
+    console.log('JupyterLab extension with Vue Component is activated!');
+    // Create a container for the Vue footer
+    const node = document.createElement('div');
+    node.id = 'custom-footer-container';
+    // Append the footer to the body, below the status bar
+    document.body.appendChild(node);
+    Vue.use(BootstrapVue, {
+      breakpoints: ["xs", "sm", "md", "lg", "xl", "xxl", "xxxl", "xxxxl"],
+    });
+    Vue.use(BootstrapVueIcons);
+    // Render the Vue footer component inside the container
+    new Vue({
+      el: node,
+      render: h => h(WorkbenchNavigator)
+    })
   }
 };
 
-export default plugin;
+export default extension;
