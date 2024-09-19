@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="GREEN" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162.21 123.83">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #00bd70;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="9.19" y="1" width="143.83" height="118.12" rx="11.2" ry="11.2"/>
+  <rect class="cls-3" x="77.17" y="8.66" width="7.86" height="7.86" rx="3.93" ry="3.93" transform="translate(162.21 25.17) rotate(-180)"/>
+  <g>
+    <path class="cls-1" d="M47.11,53.81v21.99s29.36,21.93,64.75.85v-21.09"/>
+    <polygon class="cls-1" points="81.1 66.57 123.91 49.45 81.1 34.04 38.3 49.45 81.1 66.57"/>
+    <g>
+      <line class="cls-2" x1="58.85" y1="58.01" x2="58.85" y2="77.27"/>
+      <path class="cls-1" d="M59.43,89.25h-1.17c-2.4,0-4.25-2.13-3.91-4.51l.58-4.09c.28-1.95,1.94-3.39,3.91-3.39h0c1.96,0,3.63,1.44,3.91,3.39l.58,4.09c.34,2.38-1.51,4.51-3.91,4.51Z"/>
+    </g>
+  </g>
+  <path class="cls-1" d="M161.21,108.43c0,3.98-1.61,7.58-4.22,10.18-2.59,2.62-6.19,4.22-10.18,4.22H15.4c-7.94,0-14.4-6.46-14.4-14.4h62.21c1.66,0,3.28.81,4.07,2.27.81,1.5,2.41,2.53,4.23,2.53h19.2c1.82,0,3.41-1.03,4.23-2.53.79-1.46,2.41-2.27,4.07-2.27h62.21Z"/>
+</svg>
