@@ -29,8 +29,8 @@
         "url": "https://github.com/shahchiragh/jupyterlab_workbench_navigator.git"
     },
     "scripts": {
-        "build": "webpack",
-        "clean": "rimraf lib && rimraf tsconfig.tsbuildinfo",
+        "build": "webpack && jupyter labextension build .",
+        "clean": "rimraf lib && rimraf tsconfig.tsbuildinfo && rimraf jupyterlab_workbench_navigator/labextension jupyterlab_workbench_navigator/_version.py",
         "prepare": "npm run clean && npm run build"
     },
     "dependencies": {
