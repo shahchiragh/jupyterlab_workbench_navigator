@@ -53,7 +53,7 @@ ensured-targets = [
 skip-if-exists = ["jupyterlab_workbench_navigator/labextension/static/style.js"]
 
 [tool.hatch.build.hooks.jupyter-builder.build-kwargs]
-build_cmd = "build:dev"
+build_cmd = "build:prod"
 npm = ["jlpm"]
 
 [tool.hatch.build.hooks.jupyter-builder.editable-build-kwargs]
@@ -69,7 +69,7 @@ version_cmd = "hatch version"
 before-build-npm = [
     "python -m pip install 'jupyterlab>=4.0.0,<5'",
     "jlpm",
-    "jlpm build:dev"
+    "jlpm build:prod"
 ]
 before-build-python = ["jlpm clean"]
 
