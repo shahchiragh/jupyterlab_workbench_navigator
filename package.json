@@ -1,7 +1,7 @@
 {
     "name": "jupyterlab_workbench_navigator",
-    "version": "0.1.2",
-    "description": "A JupyterLab extension for adding a navigator widget at the bottom of JupyterLab page to facilitate quick access to data workbench and other relevant applications",
+    "version": "0.1.3",
+    "description": "A JupyterLab extension to enable ARM Data Workbench navigator widget to facilitate quick access to ARM relevant applications.",
     "keywords": [
         "jupyter",
         "jupyterlab",
