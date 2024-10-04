@@ -1,6 +1,6 @@
 {
     "name": "jupyterlab_workbench_navigator",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "description": "A JupyterLab extension for adding a navigator widget at the bottom of JupyterLab page to facilitate quick access to data workbench and other relevant applications",
     "keywords": [
         "jupyter",
@@ -29,7 +29,10 @@
         "url": "https://github.com/shahchiragh/jupyterlab_workbench_navigator.git"
     },
     "scripts": {
-        "build": "webpack && jupyter labextension build .",
+        "build": "NODE_ENV=development webpack",
+        "build:dev": "NODE_ENV=development webpack && jupyter labextension build .",
+        "build:stage": "NODE_ENV=stage webpack && jupyter labextension build .",
+        "build:prod": "webpack && jupyter labextension build .",
         "clean": "rimraf lib && rimraf tsconfig.tsbuildinfo && rimraf jupyterlab_workbench_navigator/labextension jupyterlab_workbench_navigator/_version.py",
         "prepare": "npm run clean && npm run build"
     },
