@@ -54,8 +54,8 @@ const config = {
                 ],
             },
             {
-                id: "analyze",
-                label: "Analyze",
+                id: "visualize",
+                label: "Visualize",
                 description: "Perform advacned analysis and visualize data",
                 iconInactive: processTransparentIconUrl,
                 iconActive: processGreenIconUrl,
@@ -72,7 +72,7 @@ const config = {
             {
                 id: "manage",
                 label: "Manage",
-                description: "Create and manage datasets, workflows, and more",
+                description: "Create and manage datasets and workflows and engage in team collaborations",
                 iconInactive: manageTransparentIconUrl,
                 iconActive: manageGreenIconUrl,
                 hover: false,
@@ -118,6 +118,18 @@ const config = {
                     {
                         label: "Submit a dataset",
                         url: "https://armweb-stage.ornl.gov/armome",
+                        active: false,
+                        comingSoon: false,
+                    },
+                    {
+                        label: "Contribute your script",
+                        url: "https://github.com/ARM-Synergy",
+                        active: false,
+                        comingSoon: false,
+                    },
+                    {
+                        label: "Publish your Jupyter Notebook",
+                        url: "https://github.com/ARM-Development/ARM-Notebooks",
                         active: false,
                         comingSoon: false,
                     },
